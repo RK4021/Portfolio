@@ -1,6 +1,10 @@
 :root {
-    --heading-color: #232323;
-    --background-color: rgba(0, 0, 0, .6);
+    --heading-primary: #232323;
+    --heading-secondary: #fff;
+
+    --background-transparent-color: rgba(0, 0, 0, .6);
+    --background-dark-color: black;
+
 
 }
 
@@ -33,7 +37,7 @@ h3 {
 h1,
 h2,
 h3 {
-    margin-top: 3rem;
+    margin-top: 0;
     margin-bottom: 2rem;
     color: #232323;
 }
@@ -74,5 +78,344 @@ p {
         font-size: 2.3rem;
     }
 
+
+}
+
+/*block*/
+.block {
+    padding: 3rem 1rem;
+}
+
+.block-dark {
+    background-color: var(--background-dark-color);
+}
+
+.block-transparent {
+    background-color: var(--background-transparent-color);
+}
+
+
+
+.block__image {
+    width: 100%;
+    height: 100%;
+}
+
+.block__heading {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*ICON*/
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/*hero*/
+
+.block-hero {
+    background-image: url(/Images/hero@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9rem 2rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .block-hero {
+        background-image: url(/Images/hero@2x.jpg);
+    }
+}
+
+.block-hero .grid {
+    gap: 2rem;
+}
+
+.block-hero .block-dark {
+    background-color: var(--background-transparent-color);
+    transition: all .4s;
+}
+
+.block-hero .block-dark:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.hero__content {
+    text-align: center;
+    align-self: center;
+    color: #fff;
+
+}
+
+.hero__heading {
+    color: #fff;
+
+}
+
+.hero__image {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    justify-self: center;
+    box-shadow: 0 0 50px #ccc;
+    transition: transform .3s;
+
+}
+
+.hero__image:hover {
+    transform: scale(1.05);
+}
+
+/*objective*/
+
+.block-objective {
+    text-align: center;
+    padding: 6rem 0;
+
+}
+
+.objective__content {
+    padding: 4rem 1rem;
+    margin: 0;
+    font-size: 2.6rem;
+}
+
+.block-objective .block__heading {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 375px) {
+    .block-objective .block__heading {
+        font-size: 6rem;
+    }
+
+}
+
+.block-objective .icon {
+    width: 10rem;
+    height: 10rem;
+}
+
+/*block - education*/
+
+.block-education {
+    padding-bottom: 10rem;
+    position: relative;
+
+}
+
+.block-education::before {
+    content: '';
+    background-image: url(/Images/education1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 5);
+
+
+}
+
+
+
+.education__info {
+    padding: 4rem 2rem;
+    box-shadow: rgba(247, 0, 0, 0.6) 0px 10px 15px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.education__info :hover {
+    background-color: aqua;
+}
+
+.education__info .block__heading {
+    color: #fff;
+}
+
+
+.block-education .grid {
+    gap: 3rem;
+}
+
+.block-education .container {
+    padding: 0 2rem;
+}
+
+.block-education .grid {
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 375px) {
+    .block-education .block__heading {
+        font-size: 4rem;
+    }
+
+}
+
+
+/*project block*/
+
+.project__image {
+    width: 100%;
+    height: 100%;
+}
+
+
+.project__container {
+    padding: 1rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    margin-bottom: 6rem;
+}
+
+.project-block .grid {
+    gap: 2rem;
+}
+
+.project-block .block__heading {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.project-block spam {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .project__container:nth-of-type(even) .project__image__block {
+        order: 2;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .project-block .block__heading {
+        font-size: 5.7rem;
+    }
+
+}
+
+/*block-contact*/
+
+.block-contact {
+    background-image: url(/Images/contact@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 6rem 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .block-contact {
+        background-image: url(/Images/contact@2x.jpg);
+
+    }
+}
+
+
+.block-contact .container {
+    padding: 4rem 1rem;
+}
+
+.contact__list {
+    font-size: 2rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact__list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+    .contact__list {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+
+
+/*Skills-card*/
+
+.skills-block {
+    text-align: center;
+    padding: 10rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+
+.skill__container {
+    text-align: center;
+
+}
+
+.skills-block .grid {
+    gap: 5rem 2rem;
+}
+
+.skills-block .block__heading {
+    margin-bottom: 5rem;
+    color: #fff;
+
+}
+
+.skills-block h3 {
+    color: #fff;
+
+}
+
+.skill__icon {
+    --height-and-width: 20rem;
+    height: var(--height-and-width);
+    width: var(--height-and-width);
+}
+
+
+/*container*/
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/*grid*/
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-1x2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .grid-1x3 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 
 }

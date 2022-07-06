@@ -8,16 +8,180 @@
 
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
 <body>
+    <section class="block-hero block ">
+        <div class="container grid grid-1x2 block block-dark">
+            <div class="hero__content">
+                <h1 class="hero__heading">Hello,</h1>
+                <p>My name is Rahul Kumar and I am a web developer and programer.</p>
+            </div>
 
-    <h1>Rahul Kumar</h1>
-    <h2>Rahul Kumar</h2>
-    <h3>Rahul Kumar</h3>
-    <p>How are u?</p>
+            <img src="/Images/PSX_20220221_121911 (1).png" alt="" class="hero__image" data-aos="zoom-in-up">
+        </div>
+    </section>
 
+    <section class="block-objective block">
+        <div class="container">
+            <h1 class="block__heading">objective</h1>
+            <svg class="icon">
+                <use xlink:href="icons/sprite.svg#objective"></use>
+            </svg>
+            <p class="objective__content">I want to secure a responsible career opportunity to fully utilize my training
+                and skills while making a
+                significant contribution to the success of the company.</p>
+        </div>
+    </section>
+
+    <section class="block-education  block " data-aos="fade-up">
+        <div class="container">
+
+            <h1 class="block__heading">Education</h1>
+
+            <div class="grid grid-1x3">
+                <div class="education__info">
+                    <h3 class="block__heading">B.Tech</h3>
+                    <p>College : Galgotias College of Engineering</p>
+                    <p>Year : 2018-2022</p>
+                    <p>Branch : Mechanical Engineering</p>
+                </div>
+                <div class="education__info">
+                    <h3 class="block__heading">12th Class</h3>
+                    <p>School: Rosy Public School</p>
+                    <p>Year : 2017</p>
+                </div>
+                <div class="education__info">
+                    <h3 class="block__heading">10th Class</h3>
+                    <p>School: Rosy Public School</p>
+                    <p>Year : 2015</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="skills-block block block-dark">
+        <div class="container">
+            <h1 class="block__heading">skills</h1>
+            <div class="grid grid-1x2">
+
+                <div class="skill__container" data-aos="fade-right">
+                    <svg class="icon skill__icon">
+                        <use xlink:href="icons/sprite.svg#html"></use>
+                    </svg>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill__container" data-aos="fade-left">
+                    <svg class="icon skill__icon">
+                        <use xlink:href="icons/sprite.svg#css"></use>
+                    </svg>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill__container" data-aos="fade-up-right">
+                    <svg class="icon skill__icon" data-aos="fade-up-right">
+                        <use xlink:href="icons/sprite.svg#c"></use>
+                    </svg>
+                    <h3>C</h3>
+                </div>
+                <div class="skill__container" data-aos="fade-up-left">
+                    <svg class="icon skill__icon">
+                        <use xlink:href="icons/sprite.svg#c++"></use>
+                    </svg>
+                    <h3>C++</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="project-block block ">
+        <div class="container ">
+            <h1 class="block__heading">Projects</h1>
+            <div class="project__container grid grid-1x2">
+                <picture class="project__image__block">
+                    <source type="image/webp" srcset="images/portfolio@1x.webp 1x, images/portfolio@2x.webp 2x">
+                    <source type="image/jpg" srcset="images/portfolio@1x.jpg 1x, images/portfolio@2x.jpg 2x">
+                    <img src="/Images/portfolio@2x.jpg" alt="" class="project__image">
+                </picture>
+                <div>
+                    <h3>Online Portfolio</h3>
+                    <p>An online portfolio (may also be called a digital portfolio or e-portfolio) is an online
+                        representation of work you have created, as well as your skills and experiences. </p>
+                    <p>I made the design of the website on my own and to implement all the designs I used <spam>HTML
+                        </spam> and
+                        <spam>CSS</spam>. I used <spam>Java Script</spam> as well to add animations.
+                    </p>
+                </div>
+            </div>
+            <div class="project__container grid grid-1x2" data-aos="flip-left">
+                <picture class="project__image__block">
+                    <source type="image/webp" srcset="images/hosting.webp">
+                    <source type="image/jpg" srcset="images/hosting.jpg">
+                    <img src="/Images/hosting.jpg" alt="" class="project__image">
+                </picture>
+                <div>
+                    <h3>Domain Provider Website</h3>
+                    <p>This is the first website that I made while learning <spam>HTML</spam> and <spam>CSS</spam>.
+                        In this project I tried to
+                        cover all the topics
+                        which are very important to make a appealing website.
+                    </p>
+
+                    <p>With the help of this project I got to know the concept of <spam>Flex</spam> and <spam>Grid
+                        </spam> very well.</p>
+                </div>
+            </div>
+            <div class="project__container grid grid-1x2">
+                <picture class="project__image__block">
+                    <source type="image/webp" srcset="images/bank_management.webp">
+                    <source type="image/jpg" srcset="images/bank_management.jpg">
+                    <img src="images/bank_management.jpg" alt="" class="project__image">
+                </picture>
+                <div>
+                    <h3>Bank Management Project</h3>
+                    <p>This project is console based and uses classes and file handling features of <spam>C++</spam>
+                        . Here the
+                        user can perform all
+                        the tasks like creating an account, depositing the amount, withdrawing the amount, checking
+                        the balance, viewing all account holder details, closing an account, and modifying an
+                        account.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="block-contact" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="container block-transparent">
+            <ul class="contact__list">
+                <li><svg class="icon">
+                        <use xlink:href="icons/sprite.svg#gmail"></use>
+                    </svg> : rahulkumar17082000@ gmail.com
+                </li>
+
+                <li><svg class="icon">
+                        <use xlink:href="icons/sprite.svg#whatsapp"></use>
+                    </svg>: 9696163400
+                </li>
+                <li><svg class="icon">
+                        <use xlink:href="icons/sprite.svg#linkedin"></use>
+                    </svg>: www.linkedin.com/in/rk4021</li>
+                <li><svg class="icon">
+                        <use xlink:href="icons/sprite.svg#github"></use>
+                    </svg> : github.com/RK4021</li>
+
+            </ul>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
